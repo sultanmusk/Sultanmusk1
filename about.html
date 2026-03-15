@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sultan Musk </title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+    <style>
+        h1, h2, h3, h4, .premium-serif { font-family: 'Playfair Display', serif; }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #ffffff; 
+            color: #1a1a1a; 
+        }
+
+        /* Custom Selection Color */
+        ::selection {
+            background-color: #f3eae3;
+            color: #000;
+        }
+        
+        @media (min-width: 1024px) {
+            .sidebar-bg-layer {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 35%;
+                height: 100%;
+                background-color: #eaddd0;
+                z-index: -1;
+            }
+        }
+
+        .card-inner-bg { background-color: #f3eae3; }
+        
+        #mobile-menu {
+            transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+            clip-path: circle(0% at 90% 5%);
+        }
+        #mobile-menu.active { clip-path: circle(150% at 90% 5%); }
+
+        /* Hover Effect using #f3eae3 */
+        .hover-beige:hover {
+            background-color: #f3eae3 !important;
+            color: #1a1a1a !important;
+        }
+
+        .topic-pill {
+            transition: all 0.3s ease;
+            background: white;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        .topic-pill:hover {
+            background-color: #f3eae3;
+            transform: translateY(-2px);
+        }
+
+        /* Justified Text Class */
+        .text-justify-custom {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="sidebar-bg-layer"></div>
+
+    <header class="fixed top-0 left-0 w-full z-[1000] p-5 lg:px-16 flex items-center justify-between bg-white/90 backdrop-blur-md border-b border-neutral-100">
+        <div class="flex items-center gap-3">
+            <div class="w-5 h-5 bg-[#0052ff] rotate-45"></div>
+            <h1 class="text-xl font-black tracking-tighter " <h1>  Sultan musk</h1>
+       </div>
+
+        <nav class="hidden lg:flex items-center gap-6 text-[11px] font-bold uppercase tracking-widest">
+            <a href="#about" class="px-3 py-2 rounded-md transition-colors hover-beige">About</a>
+            <a href="#education" class="px-3 py-2 rounded-md transition-colors hover-beige">Education</a>
+            <a href="#skills" class="px-3 py-2 rounded-md transition-colors hover-beige">Skills</a>
+            <a href="#contact" class="ml-4 px-6 py-2 bg-black text-white rounded-full hover:bg-[#0052ff] transition-all">Contact</a>
+        </nav>
+
+        <button id="menu-btn" class="lg:hidden text-2xl text-black p-2"><i class="fa-solid fa-bars-staggered"></i></button>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[1001] flex flex-col items-center justify-center space-y-8 text-3xl font-black uppercase">
+        <button id="close-btn" class="absolute top-8 right-8 text-4xl"><i class="fa-solid fa-xmark"></i></button>
+        <a href="#about" class="mobile-link hover:text-[#0052ff]">About</a>
+        <a href="#education" class="mobile-link hover:text-[#0052ff]">Education</a>
+        <a href="#skills" class="mobile-link hover:text-[#0052ff]">Skills</a>
+        <a href="#contact" class="mobile-link hover:text-[#0052ff]">Contact</a>
+    </div>
+
+    <main class="mt-[100px] w-full max-w-[1440px] mx-auto px-6 lg:px-16 pb-20">
+        <div class="flex flex-col lg:flex-row items-start justify-center lg:justify-between gap-12 lg:gap-20">
+            
+            <aside class="w-full lg:w-[400px] lg:sticky lg:top-32 flex justify-center">
+                <div class="w-full max-w-md bg-white shadow-2xl border border-neutral-100 overflow-hidden">
+                    <div class="card-inner-bg p-10 flex flex-col items-center text-center">
+                        <img src="user.jpg" 
+                             class="w-48 h-48 rounded-full object-cover mb-6 border-4 border-white shadow-lg" alt="Sultan Musk">
+                        <h2 class="text-3xl font-black mb-2">Sultan Musk</h2>
+                        <div class="w-12 h-1 bg-[#0052ff] mb-4"></div>
+                        <p class="uppercase tracking-[0.3em] text-[10px] font-bold text-neutral-500">Project Manager</p>
+                    </div>
+                    <div class="py-6 flex justify-center gap-8 text-xl bg-white">
+                         <a href="https://insta.openinapp.co/ek4jk" class="hover:text-[#0052ff] transition-transform hover:scale-125"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.openinapp.co/vll2d" class="hover:text-[#0052ff] transition-transform hover:scale-125"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="w-full lg:max-w-2xl space-y-16">
+                
+                <section id="about" class="flex flex-col items-center lg:items-start">
+                    <h2 class="text-5xl lg:text-6xl font-black mb-8 border-b-4 border-[#0052ff] inline-block pb-2 text-center lg:text-left">
+                        About Me
+                    </h2>
+                    
+                    <div class="space-y-6 text-neutral-600 text-base md:text-lg text-justify-custom">
+                        <p class="font-bold text-black uppercase text-xs tracking-[0.2em] mb-2 text-center lg:text-left">
+                            Professional Philosophy
+                        </p>
+                        <p>
+I’m a passionate creator who believes that great design is not just about how something looks, but how it feels and works. I enjoy transforming ideas into clean, elegant, and meaningful digital experiences. With a strong interest in web design and front-end development, I focus on building interfaces that are visually appealing, user-friendly, and performance-driven.
+</p>
+
+<p>
+I see myself as a dreamer, designer, and innovator who constantly explores new ideas and technologies to improve the way people interact with the web. I enjoy working on modern, minimal, and stylish designs that balance creativity with usability. For me, simplicity is powerful. A well-structured layout, thoughtful typography, and subtle animations can make a big difference in how users perceive a product.
+</p>
+
+<p>
+My journey into the digital world started with curiosity about how websites work and how design can influence emotions and decisions. Over time, that curiosity turned into a passion for crafting responsive and engaging web experiences. I enjoy experimenting with layouts, color systems, and user interface elements while keeping accessibility and responsiveness in mind. Every project I work on is an opportunity to learn, improve, and push my creative boundaries.
+</p>
+
+<p>
+I value clean code and structured design. Whether it’s a personal portfolio, a landing page, or a complete website, I aim to create solutions that are scalable, efficient, and easy to maintain. I pay close attention to details because I believe details define quality. From spacing and alignment to hover effects and animations, every element should serve a purpose.
+</p>
+
+<p>
+Beyond technical skills, I strongly believe in the importance of soft skills. I am a good listener, a quick learner, and someone who adapts easily to new challenges. I enjoy collaborating, sharing ideas, and continuously refining my work through feedback. I approach problems with a calm mindset and a solution-oriented attitude.
+</p>
+
+<p>
+When I’m not designing or coding, I like exploring new design trends, learning about emerging technologies, and finding inspiration from creative work around the world. I believe growth comes from consistency, curiosity, and the courage to keep improving, even when things don’t work perfectly the first time.
+</p>
+
+<p>
+My goal is to keep evolving as a creative professional and build digital experiences that are not only functional but also memorable. I want my work to reflect clarity, creativity, and confidence, and to leave a positive impact on users who interact with it.
+</p>
+                    </div>
+                </section>
+
+                <section id="education" class="border-t border-neutral-100 pt-12">
+                    <h4 class="font-bold uppercase text-xs tracking-widest mb-8 text-center lg:text-left">Academic Timeline</h4>
+                    <div class="grid gap-4">
+                        <div class="p-6 border border-neutral-100 rounded-xl transition-colors hover-beige text-center lg:text-left">
+                            <h5 class="font-bold text-lg">Bachelor of Arts</h5>
+                            <p class="text-neutral-500 text-sm">Graduation • Class of 2024 </p>
+                        </div>
+                        <div class="p-6 border border-neutral-100 rounded-xl transition-colors hover-beige text-center lg:text-left">
+                            <h5 class="font-bold text-lg">Senior Secondary Education</h5>
+                            <p class="text-neutral-500 text-sm">12th Grade • Class of 2023</p>
+                        </div>
+                        
+                        
+<div class="p-6 border border-neutral-100 rounded-xl transition-colors hover-beige text-center lg:text-left">
+                            <h5 class="font-bold text-lg">High School Education</h5>
+                            <p class="text-neutral-500 text-sm">10th Grade • Class of 2021</p>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <section id="skills" class="border-t border-neutral-100 pt-12">
+                    <h4 class="font-bold uppercase text-xs tracking-widest mb-8 text-center lg:text-left">Expertise & Skills</h4>
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-3">
+                        <span class="topic-pill px-5 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest cursor-default">Communication Skills</span>
+                        <span class="topic-pill px-5 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest cursor-default">Risk Management</span>
+                        <span class="topic-pill px-5 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest cursor-default">Teamwork & Collaboration</span>
+                        <span class="topic-pill px-5 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest cursor-default">Problem-Solving</span>
+                        <span class="topic-pill px-5 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest cursor-default">Team Leadership</span>
+                        <span class="topic-pill px-5 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest cursor-default">Critical Thinking</span>
+                        
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact" class="bg-white p-10 lg:p-20 border-t border-neutral-100">
+        <div class="max-w-7xl mx-auto flex flex-col items-center gap-10">
+            <div class="flex gap-8 text-3xl md:text-4xl">
+                <a href="https://insta.openinapp.co/ek4jk" class="hover:text-[#0052ff] transition-all hover:-translate-y-1"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.openinapp.co/vll2d" class="hover:text-[#0052ff] transition-all hover:-translate-y-1"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://telegram.openinapp.co/b88mg" class="hover:text-[#0052ff] transition-all hover:-translate-y-1"><i class="fa-brands fa-telegram"></i></a>
+                <a href="mailto:help@sult.in" class="hover:text-[#0052ff] transition-all hover:-translate-y-1"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            
+            
+            <div class="text-[10px] text-neutral-400 uppercase tracking-[0.3em] text-center">
+                Made With Love By Sultan  • All Rights Reserved
+            </div>
+            
+            
+        </div>    
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.onclick = () => mobileMenu.classList.add('active');
+        closeBtn.onclick = () => mobileMenu.classList.remove('active');
+        
+        mobileLinks.forEach(link => {
+            link.onclick = () => mobileMenu.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
